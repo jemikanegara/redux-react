@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-// import PropTypes from "prop-types";
 import { fetchData } from "../action/todoAction";
 
 class List extends Component {
   componentDidMount() {
     this.props.fetchData();
   }
-
+  //   componentWillReceiveProps() {
+  //     this.props.fetchData();
+  //   }
   render() {
     return (
       <div>
